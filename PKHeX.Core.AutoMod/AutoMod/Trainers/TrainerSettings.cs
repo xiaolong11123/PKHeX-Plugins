@@ -23,9 +23,9 @@ namespace PKHeX.Core.AutoMod
             GameVersion.PLA
         ];
 
-        public static string DefaultOT { get; set; } = "ALM";
-        public static ushort DefaultTID16 { get; set; } = 54321; // reverse of PKHeX defaults
-        public static ushort DefaultSID16 { get; set; } = 12345; // reverse of PKHeX defaults
+        public static string DefaultOT { get; set; } = "Sakura";
+        public static ushort DefaultTID16 { get; set; } = 55480; // reverse of PKHeX defaults
+        public static ushort DefaultSID16 { get; set; } = 1262; // reverse of PKHeX defaults
 
         public static ITrainerInfo DefaultFallback(int gen = 8, LanguageID? lang = null)
         {
@@ -44,9 +44,9 @@ namespace PKHeX.Core.AutoMod
                 lang == null
                     ? new SimpleTrainerInfo(ver) { Context = ctx }
                     : new SimpleTrainerInfo(ver) { Language = (int)lang, Context = ctx };
-            fallback.OT = DefaultOT;
-            fallback.TID16 = DefaultTID16;
-            fallback.SID16 = DefaultSID16;
+            fallback.OT = "Sakura";
+            fallback.TID16 = 55480;
+            fallback.SID16 = 1262;
             return fallback;
         }
 
